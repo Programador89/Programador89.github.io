@@ -79,7 +79,7 @@ figure img{
     width: 750px;
 }
 
-legend {
+figcaption {
     color: #555555;
     background-color: #F6F6F6;
     padding: 10px 20px;
