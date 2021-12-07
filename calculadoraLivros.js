@@ -26,3 +26,44 @@ function escritor(nome, anoNascimento, anoFalescimento, obras){
 var escritorTolkien = new escritor("J. R. R. Tolkien", 1892, 1973, 9);
 
 console.log(`${escritorTolkien.nome} possui ${escritorTolkien.idade(this.anoFalescimento, this.anoNascimento)} anos.`);
+
+
+
+var hotel = {}
+hotel.name = "Copacabana Palace";
+hotel.rooms = 60;
+hotel.booked = 20;
+hotel.available = function() {
+    return this.rooms - this.booked;
+};
+
+
+//Um método de um objeto
+
+function cadastroPessoal(nome, idade, sexo, nacionalidade) {
+    this.nome = nome;
+    this.idade = idade;
+    this.sexo = sexo;
+    this.nacionalidade = nacionalidade;
+}
+
+var homem = new cadastroPessoal("Rafael Dantas", 32, "Masculino", "brasileiro");
+var mulher = new cadastroPessoal("Larissa Sather", 29, "Feminino", "brasileira");
+
+
+console.log(homem.nome);
+console.log(mulher.nome);
+
+
+//Arrays 
+
+// informando os custos dos quartos de um hotel através de objeto: 
+var hotelPensilvania = {
+    quarto1: 420, 
+    quarto2: 500, 
+    quarto3: 420, 
+    quarto4: 700
+};
+
+// informando os mesmso custos mas através de arrays: 
+var hotelLasPalmas = [420, 500, 420, 700];
